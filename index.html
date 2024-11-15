@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>My First Webpage</title>
-  </head>
-
-  <body>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
     <h1>Hello World!</h1>
-  </body>
-      <script src="index.js"></script>
-
+    <div class="wrapper">
+        <div class="pass-field">
+            <input type="password" placeholder="Enter Password">
+            <i class="fa-solid fa-eye"></i>
+        </div>
+        <div class="content">
+            <p>Password must contain:</p>
+            <ul class="requirement-list">
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least 8 characters long</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least 1 lowercase letter (a-z)</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least 1 uppercase letter (A-Z)</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least 1 special symbol (!@#$%^&*()_+)</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
 </html>
